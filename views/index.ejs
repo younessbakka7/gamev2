@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="game.css">
+  <title>Document</title>
+
+</head>
+<body>
+  <form className='for' method="post" action="/all" >
+    <h1>Game</h1>
+    <label htmlFor='name' >NomGamer</label><br><br>
+    <input className='nom' name="nom"  type="text" required /><br /><br />
+    <label htmlFor='email' >EmailGamer</label><br /><br />
+    <input name="email" className='email'/><br><br>
+    <button className='sat'>send</button>
+    
+  
+    </form>
+
+
+
+
+
+
+
+  <div class='kaka'>
+    <div className='kaka'>
+      <a href="views/index.ejs"><LI> LOGIN </LI></a>
+    <div id="scoreHight" class="s">Hight Score :0</div>
+    <div class="s" id="currentscore">Current Score :0</div>
+    <button id="disable" onclick="startGame()">START</button>
+    <div id="timeDisplay" hidden="true">Time Left :25</div>
+    <br />
+    what is the answer ?
+    <br />
+    <div className="big" id="opearation">0 * 0</div>
+    <br />
+    <button onclick="checkAnsawer(1)" id="btn1">0</button>
+    <button onclick="checkAnsawer(2)" id="btn2">0</button>
+    <br />
+    <button onclick="checkAnsawer(3)" id="btn3">0</button>
+    <button onclick="checkAnsawer(4)" id="btn4">0</button>
+  </div>
+
+  
+
+</body>
+</html>
